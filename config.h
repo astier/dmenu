@@ -7,8 +7,10 @@ static int topbar = 1;
 static unsigned int lines = 0;
 
 static const char *colors[SchemeLast][2] = {
-    //               fg         bg
-    [SchemeNorm] = { "#d8dee9", "#2e3440" },
-    [SchemeSel]  = { "#d8dee9", "#000000" },
-    [SchemeOut]  = { "#d8dee9", "#2e3440" },
+    //                           fg         bg
+    [SchemeNorm]          = { "#d8dee9", "#2e3440" },
+    [SchemeSel]           = { "#d8dee9", "#000000" },
+	[SchemeSelHighlight]  = { "#bf616a", "#000000" },
+	[SchemeNormHighlight] = { "#bf616a", "#2e3440" },
+    [SchemeOut]           = { "#d8dee9", "#2e3440" },
 };
