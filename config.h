@@ -1,10 +1,12 @@
 static const char *fonts[] = { "monospace:size=13" };
 static const char *prompt = NULL;
 static const char worddelimiters[] = " ";
+static const int min_width = 200;
 static const unsigned int border_width = 1;
+static int centered = 1;
 static int fuzzy = 1;
 static int topbar = 1;
-static unsigned int lines = 0;
+static unsigned int lines = 6;
 
 static const char *colors[SchemeLast][2] = {
     //                           fg         bg
