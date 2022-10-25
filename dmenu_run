@@ -1,2 +1,3 @@
-#!/bin/sh
-dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
+#!/usr/bin/env sh
+
+nohup setsid -f "$(dmenu_path | dmenu "$@")" > /dev/null 2>&1
